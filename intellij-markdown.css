@@ -112,3 +112,11 @@ input[type="checkbox"]:checked {
   border-color: #89ca78;
   background: #89ca78 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%2322272e' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat;
 }
+
+p:has(+ ul, + ol) {
+  margin-bottom: 0;
+}
+
+p + ul, p + ol {
+  margin-top: 0;
+}
